@@ -11,7 +11,7 @@ public class Main {
         // IDiscordClient that uses getDiscordClient helper method in BotUtils to create client
         IDiscordClient client = BotUtils.getDiscordClient(token);
 
-        // Uses provider instance to set token of riot api
+        // Uses provider instance to set token of riot api s
         provider.setTOKEN(args[1]);
 
         // Registering all @EventSubscribers at BotEvents class
