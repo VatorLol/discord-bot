@@ -28,8 +28,8 @@ public class BotEvents {
 
             // Using switch-case statement to determine what to do with the command
             switch (command){
-                case "PING": BotUtils.sendMessage(event.getChannel(), "Pong!");
-                case "META": BotUtils.sendEmbedMessage(event.getChannel(), message.toUpperCase());
+                case "PING": BotUtils.sendMessage(event.getChannel(), "Pong!"); break;
+                case "META": BotUtils.sendEmbedMessage(event.getChannel(), message.toUpperCase()); break;
                 default: break;
             }
         }

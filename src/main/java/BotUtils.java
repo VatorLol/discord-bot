@@ -1,9 +1,7 @@
 import sx.blah.discord.api.ClientBuilder;
 import sx.blah.discord.api.IDiscordClient;
-import sx.blah.discord.api.internal.json.objects.EmbedObject;
 import sx.blah.discord.handle.impl.obj.Embed;
 import sx.blah.discord.handle.obj.IChannel;
-import sx.blah.discord.handle.obj.IEmbed;
 import sx.blah.discord.util.EmbedBuilder;
 import sx.blah.discord.util.RequestBuffer;
 
@@ -69,7 +67,7 @@ public class BotUtils {
             builder.appendField(ROLES.get("ADC"));
         else if (message.contains("SUPPORT"))
             builder.appendField(ROLES.get("SUPPORT"));
-        // If message doesn't contain any specification then below method would add all the fields
+            // If message doesn't contain any specification then below method would add all the fields
         else if (message.isEmpty())
             builder = appendAllFields(builder);
         else
@@ -81,7 +79,7 @@ public class BotUtils {
     /**
      * Helper method to initialize map
      */
-    private static void initializeMap(){
+    private static void initializeMap() {
         ROLES.put("TOP", new Embed.EmbedField("TOP", "Urgot\nCamille\nSion\nOrnn", true));
         ROLES.put("JUNGLE", new Embed.EmbedField("JUNGLE", "Gragas\nSkarner\nTaliyah\nCamille", true));
         ROLES.put("MID", new Embed.EmbedField("MID", "Kassadin\nRyze\nSyndra\nIrelia", true));
@@ -92,9 +90,9 @@ public class BotUtils {
     /**
      * A helper method to put all fields
      *
-     * @return returns an EmbedBuilder wth given fields
+     * @return returns an EmbedBuilder with given fields
      */
-    private static EmbedBuilder appendAllFields(EmbedBuilder builder){
+    private static EmbedBuilder appendAllFields(EmbedBuilder builder) {
         builder.appendField(ROLES.get("TOP"));
         builder.appendField(ROLES.get("JUNGLE"));
         builder.appendField(ROLES.get("MID"));
