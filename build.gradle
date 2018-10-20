@@ -14,4 +14,5 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'com.discord4j', name: 'Discord4J', version: '2.10.1'
+    compile 'com.merakianalytics.orianna:orianna:3.0.4'
 }
